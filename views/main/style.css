@@ -1,0 +1,56 @@
+body {
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    flex: 1 0 auto;
+    background: url('../../template/img/main/mainBg.jpg') no-repeat center center /cover;
+
+}
+
+.main__inner {
+    padding: 0 1.5em 0 0;
+}
+
+.main__outer {
+    margin: 0 0 7em 7em;
+}
+
+.main__icons {
+    display: inline-flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+.main__icon {
+    align-self: end;
+    height: 100%;
+}
+
+.main__svg {
+    width: 5em;
+
+}
+
+@media (max-width: 999px) {
+    .main {
+        justify-content: center;
+        font-size: 1.3em;
+    }
+
+    .main__outer {
+        margin: 0;
+    }
+
+    .main__inner {
+        margin: 1.5em;
+    }
+
+    .main__icons {
+        flex-direction: column;
+        align-self: center;
+
+    }
+
+}
