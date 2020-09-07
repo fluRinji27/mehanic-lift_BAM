@@ -5,7 +5,7 @@ let modalState = false;
 
 const searchModal = new Modal(`
     <form action="/catalog/search" method="post" class="modal__search-form">
-    <input placeholder="Ведите артикул или наименование..." type="text" name="search" class="search-form__input search-form__input-inner">
+    <input placeholder="Ведите артикул или наименование..." type="text" name="search" class="modal__input search-form__input-inner">
     <input class="search-form__button search-form__button-inner" type="submit" value="Найти">
     </form>`);
 

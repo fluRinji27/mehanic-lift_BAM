@@ -5,7 +5,7 @@ body {
 .main {
     display: flex;
     flex: 1 0 auto;
-    background: url('../../template/img/main/mainBg.jpg') no-repeat center center /cover;
+    background: url('../../img/main/mainBg.jpg') no-repeat center center /cover;
 
 }
 
@@ -26,6 +26,7 @@ body {
 .main__icon {
     align-self: end;
     height: 100%;
+    cursor: pointer;
 }
 
 .main__svg {
