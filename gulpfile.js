@@ -32,7 +32,7 @@ const path = {
     clean: './template'
 };
 
-gulp.task('js:build', function () {
+gulp.task('js:build', function (done) {
     gulp.src(path.src.js) //Найдем наш main файл
         .pipe(rigger()) //Прогоним через rigger
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
@@ -40,18 +40,21 @@ gulp.task('js:build', function () {
         .pipe(uglify()) //Сожмем наш js
         .pipe(sourcemaps.write()) //Пропишем карты
         .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
+
+    done()
 });
 
-gulp.task('style:build', function () {
+gulp.task('style:build', function (done) {
     gulp.src(path.src.style) //Выберем наш main.scss
         .pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(prefixer()) //Добавим вендорные префиксы
         .pipe(cssmin()) //Сожмем
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css)) //И в build
+    done()
 });
 
-gulp.task('image:build', function () {
+gulp.task('image:build', function (done) {
     gulp.src(path.src.img) //Выберем наши картинки
         .pipe(imagemin({ //Сожмем их
             progressive: true,
@@ -60,6 +63,8 @@ gulp.task('image:build', function () {
             interlaced: true
         }))
         .pipe(gulp.dest(path.build.img)) //И бросим в build
+
+    done()
 });
 
 gulp.task('fonts:build', function () {
@@ -74,16 +79,16 @@ gulp.task('build', gulp.parallel(
     'image:build'
 ));
 
-gulp.task('watch', function () {
+gulp.task('watch', function (done) {
     gulp.watch(path.watch.style, gulp.series('style:build'));
     gulp.watch(path.watch.js, gulp.series('js:build'));
     gulp.watch(path.watch.img, gulp.series('image:build'));
     gulp.watch(path.watch.fonts, gulp.series('fonts:build'));
-
+    done()
 });
 
 gulp.task('clean', function (cb) {
     rimraf(path.clean, cb);
 });
 
-gulp.task('default', gulp.parallel('build'));
+gulp.task('default', gulp.parallel('build', 'watch'));
