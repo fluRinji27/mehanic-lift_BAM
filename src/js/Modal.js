@@ -56,3 +56,20 @@ Modal.prototype.destroyModal = () => {
 
     return true
 };
+
+let modalState = false;
+
+const createModal = body => {
+    if (!modalState) {
+        modalState = true;
+
+        body.createModal();
+
+        let modalCloseBtn = document.body.querySelector('.modal__close-btn');
+
+        modalCloseBtn.addEventListener('click', () => {
+            body.destroyModal();
+            modalState = false;
+        })
+    }
+}
