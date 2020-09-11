@@ -50,3 +50,35 @@ const menuModal = new Modal(`<nav class="navigation">
 
 searchIcon.addEventListener('click', () => createModal(searchModal));
 menuButton.addEventListener('click', () => createModal(menuModal));
+
+
+const animateHeaderTitle = () => {
+    firstTitle.innerText = '';
+    secondTitle.innerText = '';
+    setTimeout(() => {
+        renderText(firstTitleText, '.first_title');
+        setTimeout(() => renderText(secondTitleText, '.second_title'), 1300)
+    }, 1000)
+
+};
+const animateHeaderLogo = () => {
+    const logo = document.querySelector('.header__logo');
+    logo.style.position = 'relative';
+    logo.style.animationName = 'animationBottomToTop';
+    logo.style.animationDuration = '1.5s';
+}
+
+window.onload = () => {
+
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+    }, 500);
+    animateHeaderLogo();
+    setTimeout(() => animateHeaderTitle(), 1500)
+}
+
+
+
+

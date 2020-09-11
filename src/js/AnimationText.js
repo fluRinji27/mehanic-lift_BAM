@@ -21,16 +21,6 @@ const renderText = (text, div) => {
     }
 };
 
-let foo = () => {
-    firstTitle.innerText = '';
-    secondTitle.innerText = '';
-    setTimeout(() => {
-        renderText(firstTitleText, '.first_title');
-        setTimeout(() => renderText(secondTitleText, '.second_title'), 1300)
-    }, 1000)
-
-};
-foo();
 
 
 
