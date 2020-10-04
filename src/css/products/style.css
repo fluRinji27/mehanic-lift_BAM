@@ -10,21 +10,10 @@
 .owl-carousel__products {
 }
 
-/*.product__list-inner {*/
-/*    padding: 0 2.2em;*/
-/*}*/
-
 .products__item {
-    width: 20em;
-    height: 30em;
-    /*margin: 0 5em;*/
-}
+    width: auto;
+    height: calc(95vh - 30em);
 
-.products__item-outer {
-    margin: 0 0em;
-}
-
-.products__link {
 }
 
 .products__img {
@@ -32,7 +21,14 @@
     width: 100%;
 }
 
+.products__item-inner {
+    padding: 0 5em;
+}
+
+
 .products__title {
+    padding-top: 1em;
+    font-size: 1.25em;
 }
 
 .owl-item {
