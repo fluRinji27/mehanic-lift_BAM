@@ -1,0 +1,105 @@
+
+.products {
+    display: flex;
+    overflow: hidden;
+}
+
+.products__list {
+}
+
+.owl-carousel__products {
+}
+
+/*.product__list-inner {*/
+/*    padding: 0 2.2em;*/
+/*}*/
+
+.products__item {
+    width: 20em;
+    height: 30em;
+    /*margin: 0 5em;*/
+}
+
+.products__item-outer {
+    margin: 0 0em;
+}
+
+.products__link {
+}
+
+.products__img {
+    height: 100%;
+    width: 100%;
+}
+
+.products__title {
+}
+
+.owl-item {
+    justify-content: center;
+}
+
+/*IPHONE 6-7-8 PLUS*/
+@media (width: 414px) and (height: 736px) {
+    .products__item {
+        width: 35em;
+        height: 50em;
+    }
+}
+
+/*IPHONE 6-7-8 PLUS REVERSE*/
+@media (max-width: 736px) and (height: 414px) {
+    .products__item {
+        width: 25em;
+        height: 30em;
+    }
+}
+
+
+/*IPHONE 6-7-8*/
+@media (width: 375px) and (height: 667px) {
+    .products__item {
+        width: 30em;
+        height: 40em;
+    }
+}
+
+/*IPHONE 6-7-8 REVERSE*/
+@media (width: 667px) and (height: 375px) {
+    .products__item {
+        width: 20em;
+        height: 25em;
+    }
+}
+
+/*IPHONE X*/
+@media (width: 375px) and (height: 812px) {
+    .products__item {
+        width: 35em;
+        height: 50em;
+    }
+}
+
+/*IPHONE X REVERSE*/
+@media (width: 812px) and (height: 375px) {
+    .products__item {
+        width: 20em;
+        height: 25em;
+    }
+}
+
+/*IPHONE X MAX*/
+@media (width: 414px) and (height: 896px) {
+    .products__item {
+        width: 40em;
+        height: 55em;
+    }
+}
+
+/*IPHONE X  REVERSE*/
+@media (width: 896px) and (height: 414px) {
+    .products__item {
+        width: 20em;
+        height: 25em;
+    }
+}
