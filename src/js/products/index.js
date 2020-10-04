@@ -30,8 +30,6 @@ $(function () {
                 items: 2,
                 smartSpeed: 2500,
                 autoplayTimeout: 2500,
-
-
             },
             800: {
                 items: 3
