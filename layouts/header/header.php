@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../template/css/index.css">
+    <link rel="stylesheet" href="./template/css/index.css">
 
     <title><?php echo $mainTitle['pageName'] . ' - МЕХАНИК' ?></title>
 </head>
@@ -18,7 +18,7 @@
     </svg>
 </div>
 <header class="header">
-    <img class="header__logo header__logo-inner" src="../../src/img/header/logo.svg" alt="">
+    <a href="/"><img class="header__logo header__logo-inner" src="./template/img/header/logo.svg" alt=""></a>
 
     <div class="header__title header__inner">
         <h1 class="first_title">Стальное качество</h1>
@@ -26,18 +26,20 @@
     </div>
     <div class="header__icons">
         <div class="header__icon  header__icon-inner search">
-            <img src="../../src/img/header/search_icon.svg" alt="" class="header__img">
+            <img src="./template/img/header/search_icon.svg" alt="" class="header__img">
         </div>
 
         <div class="header__icon drop-menu header__icon-inner">
-            <img src="../../src/img/header/dropMenuBtn.svg" alt="" class="header__img">
+            <img src="./template/img/header/dropMenuBtn.svg" alt="" class="header__img">
         </div>
     </div>
 
 
     <div class="header__phone-link header__phone-link-inner">
 
-        <a href="" class="header__link"><img src="../../src/img/header/plusTelephone.svg" alt="" class="header__img">7[969] <br>
+        <a href="" class="header__link"><img src="./template/img/header/plusTelephone.svg" alt=""
+                                             class="header__img header__link-img">7[969]
+            <br>
             0779988</a>
     </div>
 

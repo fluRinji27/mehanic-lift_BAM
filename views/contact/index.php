@@ -1,3 +1,42 @@
+<?php require(ROOT . '/layouts/header/header.php') ?>
+<main class="contact">
+    <div class="info">
+        <div class="info__block info__block-flex-start info__wrapper">
+            <h5 class="info__title">адрес:</h5>
+            <br>
+            <p class="info__text">
+                107553, г. Моска, </br>ул. Большая Черкизовская, дом 24А, стр. 1, этаж 3, офис 305
+            </p>
+            <br>
+            <h5 class="info__title">режим работы:</h5><br>
+            <p class="info__text">пн.-пт. с 9:00 - 18:00 <br>
+                сб-вс - выходной</p>
+
+        </div>
+        <div class="info__block info__block-flex-end info__wrapper">
+            <h5 class="info__title">реквизиты компании:</h5>
+            <br>
+            <p class="info__text">
+                <span>огрн</span><br>
+                1187746853766<br>
+                <span>инн/кпп</span><br>
+                9718117040/771801001
+            </p>
+        </div>
+        <div class="info__icons info__wrapper">
+            <a class="info__link" href="#">
+                <img class="info__icon" src="./template/img/contact/fb_icon.png" alt="">
+            </a>
+            <a class="info__link" href="#">
+                <img class="info__icon" src="./template/img/contact/ic_icon.png" alt="">
+            </a>
+            <a class="info__link" href="#">
+                <img class="info__icon" src="./template/img/contact/vk_icon.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div id="map" class="map_gray-theme"></div>
+</main>
 <footer class="footer">
     <div class="callback callback__inner callback_theme_dark">
         <h1 class="callback__title">Обратный звонок</h1>
@@ -36,9 +75,9 @@
             </li>
             <li class="nav-list__item footer__inner">
                 <a href="/about" class="nav-list__link">
-                   о компании
+                    о компании
                 </a>
-             </li>
+            </li>
             <li class="nav-list__item footer__inner">
                 <a href="/contact" class="nav-list__link">
                     контакты
@@ -49,6 +88,9 @@
 </footer>
 <script src="./template/js/jquery-3.5.0.min.js"></script>
 <script src="./template/js/owl.carousel.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=3d4088f9-90b3-4dee-9a0e-94a5113bd6f2&lang=ru_RU"
+        type="text/javascript"></script>
 <script src="./template/js/index.js"></script>
+
 </body>
 </html>

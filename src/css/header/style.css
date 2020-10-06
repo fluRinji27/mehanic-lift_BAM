@@ -41,6 +41,7 @@ html, body {
     display: flex;
     flex-direction: row;
     line-height: 1.1em;
+    z-index: 2;
 }
 
 .header__phone-link-inner {
@@ -50,6 +51,7 @@ html, body {
 .header__icons {
     display: flex;
     margin: 0 0 0 auto;
+    z-index: 3;
 }
 
 .header__icon {
