@@ -12,6 +12,7 @@ html, body {
 
 .header {
     display: flex;
+    position: relative;
 }
 
 .header__inner {
@@ -94,6 +95,7 @@ html, body {
 @media (max-width: 999px) {
     html, body {
         font-size: 9px;
+        overflow: auto;
     }
 
     .header__phone-link {

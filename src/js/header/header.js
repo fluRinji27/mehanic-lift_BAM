@@ -59,7 +59,7 @@ const animateHeaderTitle = () => {
     secondTitle.innerText = '';
     setTimeout(() => {
         renderText(firstTitleText, '.first_title');
-        setTimeout(() => renderText(secondTitleText, '.second_title'), 1300)
+        setTimeout(() => renderText(secondTitleText, '.second_title'), 1400)
     }, 1000)
 
 };

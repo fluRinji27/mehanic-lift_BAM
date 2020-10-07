@@ -3,6 +3,7 @@
     position: relative;
     background-color: black;
     flex: 0 0 auto;
+    z-index: 2;
 }
 
 .footer__inner {

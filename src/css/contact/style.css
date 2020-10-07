@@ -1,6 +1,6 @@
 .contact {
     display: flex;
-    position: relative;
+    overflow-x: auto;
 }
 
 .info {
@@ -33,6 +33,7 @@
 
 .info__text {
     padding-top: 1em;
+    line-height: 1.5em;
 }
 
 .info__icons {
@@ -51,6 +52,7 @@
     align-self: flex-end;
     position: absolute;
     right: 0;
+    top: -3.5em;
     z-index: 1;
 }
 

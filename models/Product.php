@@ -11,7 +11,9 @@ class Product
             // $count = intval($count);
 
             $page = intval($page);
-            $offset = ($page - 1) * self::SHOW_BY_DEFAULT;
+            $offset = $page  * self::SHOW_BY_DEFAULT;
+            //echo($offset)
+            //$replaceOffset = 20
             $db = Db::getConnection();
             $productsList = array();
             $result = $db->query(
