@@ -54,6 +54,8 @@ menuButton.addEventListener('click', () => createModal(menuModal));
 
 const animateHeaderTitle = () => {
     const title = document.body.querySelector('.header__title');
+    let firstTitle = document.body.querySelector('.first_title');
+    let secondTitle = document.body.querySelector('.second_title');
     title.style.display = 'block';
     firstTitle.innerText = '';
     secondTitle.innerText = '';

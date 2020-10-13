@@ -8,7 +8,7 @@ class ProductController
         $productItems = array();
 
         $productItems = Product::getProductView($id);
-        require_once(ROOT . '/views/product/view.php');
+        require_once(ROOT . '/views/product/index.php');
         return true;
     }
 }

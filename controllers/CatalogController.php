@@ -5,8 +5,6 @@ class CatalogController
 
     public function ActionIndex($page = 1)
     {
-
-        // echo $page;
         $products = array();
         $products = Product::getProduct($page);
 

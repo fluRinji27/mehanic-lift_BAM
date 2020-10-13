@@ -2,18 +2,22 @@
 <main class='main__catalog'>
 <div class="filter">
   <?php $url = $_SERVER['REQUEST_URI'];?>
-                    <a class="filter__item button__black" href="/catalog/category/1" <?php
+                    <a  href="/catalog/category/1" <?php
                     $url = $_SERVER['REQUEST_URI'];
                     if ($url == "/catalog/category/1" || $url == "/catalog/category/1/page-1") {
-                        echo 'class="activeFilter"';
+                        echo 'class=" filter__item button__black-active"';
+                    }else {
+                    echo 'class=" filter__item button__black"';
                     } ?>>Запасные части для лифтов</a>
-                    <a class="filter__item button__black" href="/catalog/category/2" <?php $url = $_SERVER['REQUEST_URI'];
+                    <a  href="/catalog/category/2" <?php $url = $_SERVER['REQUEST_URI'];
                     if ($url == "/catalog/category/2" || $url == "/catalog/category/2/page-1") {
-                        echo 'class="activeFilter"';
+                        echo 'class="filter__item button__black-active"';
+                    }else {
+                    echo 'class=" filter__item button__black"';
                     } ?>>Запасные части для эскалаторов</a>
 </div>
 <div class="catalog catalog__wrapp">
-    <?php foreach ($products as $product) : ?>
+    <?php foreach ($categoryes as $product) : ?>
         <div class="catalog__item">
             <a href="/product/<?php echo $product['id']; ?>" class="catalog__link-img">
             <img class="catalog__img" src="/template/img/products_pictures/<?php echo $product['pics'] . '_pic.jpg'; ?>" alt="<?php echo $product['name']; ?>"></a>

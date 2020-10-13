@@ -1,0 +1,18 @@
+.button__black {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: .5em;
+}
+
+.button__black:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.button__black-active {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}

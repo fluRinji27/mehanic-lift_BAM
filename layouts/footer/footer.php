@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer footer__wrapper">
     <div class="callback callback__inner callback_theme_dark">
         <h1 class="callback__title">Обратный звонок</h1>
         <svg alt="Кнопка обратного звонка заказать обратный звонок" class="callback__img callback__img-inner"
@@ -47,8 +47,9 @@
         </ul>
     </nav>
 </footer>
-<script src="./template/js/jquery-3.5.0.min.js"></script>
-<script src="./template/js/owl.carousel.min.js"></script>
-<script src="./template/js/index.js"></script>
+<script type="text/javascript" src="/template/js/index.js"></script>
+<script type="text/javascript">
+    const lightbox = GLightbox({});
+</script>
 </body>
 </html>

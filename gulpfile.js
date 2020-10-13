@@ -4,11 +4,11 @@ let gulp = require('gulp'),
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     sourcemaps = require('gulp-sourcemaps'),
-    rigger = require('gulp-rigger'),
     cssmin = require('gulp-minify-css'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf');
+let include = require('gulp-include')
 
 const path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
@@ -34,7 +34,7 @@ const path = {
 
 gulp.task('js:build', function (done) {
     gulp.src(path.src.js) //Найдем наш main файл
-        .pipe(rigger()) //Прогоним через rigger
+        .pipe(include()) //Прогоним через rigger
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
         .pipe(babel({presets: ['@babel/env']}))
         .pipe(uglify()) //Сожмем наш js
@@ -46,6 +46,7 @@ gulp.task('js:build', function (done) {
 
 gulp.task('style:build', function (done) {
     gulp.src(path.src.style) //Выберем наш main.scss
+        .pipe(include())
         .pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(prefixer()) //Добавим вендорные префиксы
         .pipe(cssmin()) //Сожмем
@@ -75,8 +76,8 @@ gulp.task('fonts:build', function () {
 gulp.task('build', gulp.parallel(
     'js:build',
     'style:build',
-    'fonts:build',
-    'image:build'
+    // 'fonts:build',
+    // 'image:build'
 ));
 
 gulp.task('watch', function (done) {
