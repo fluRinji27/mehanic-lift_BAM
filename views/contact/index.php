@@ -86,8 +86,9 @@
         </ul>
     </nav>
 </footer>
-<script src="./template/js/index.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=3d4088f9-90b3-4dee-9a0e-94a5113bd6f2&lang=ru_RU"
         type="text/javascript"></script>
+<script src="./template/js/index.js"></script>
+
 </body>
 </html>

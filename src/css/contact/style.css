@@ -1,6 +1,6 @@
 .contact {
     display: flex;
-    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .info {

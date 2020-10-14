@@ -1,4 +1,6 @@
 let main = document.body.getElementsByTagName('main');
 let footer = document.body.querySelector('.footer');
+if (footer) {
+    main[0].style.marginBottom = footer.clientHeight + 'px'
 
-main[0].style.marginBottom = footer.clientHeight + 'px'
+}

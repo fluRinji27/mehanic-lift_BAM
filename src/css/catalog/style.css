@@ -3,6 +3,10 @@ html, body {
 }
 
 .main__catalog {
+    flex: none;
+}
+
+.main__catalog {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +23,7 @@ html, body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    /*align-items: center;*/
+    align-items: center;
     /*margin: 0 auto;*/
 }
 
@@ -33,14 +37,15 @@ html, body {
 
 }
 
-.catalog__link-img {
-    width: 100%;
-    border: 2px solid black;
-}
+/*.catalog__link-img {*/
+/*    width: 100%;*/
+
+/*}*/
 
 .catalog__img {
     width: 25em;
     height: 25em;
+    border: 2px solid black;
 }
 
 .catalog__link {
